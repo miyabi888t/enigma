@@ -1,0 +1,20 @@
+
+
+$breakpoints: (
+    "sm": "screen and (min-width: 768px)",   
+    "md": "screen and (min-width: 1080px)",
+    "lg": "screen and (min-width: 1200px)",
+    "xl": "screen and (min-width: 1500px)"
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+$color : #510000;
+$hover-color : pink;
+$text-color: #000000;
+$text-sub-color: #ffffff;
+$border-color: #8E8E8E;

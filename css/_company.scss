@@ -1,0 +1,51 @@
+
+@import "common.scss";
+
+.company__wrapper {
+    .company__contents {
+        display: block;
+        margin: 0 auto;
+        @include mq('md') {
+            width: 80%;
+            max-width: 900px;
+        }
+        .company__items {
+            padding: 15px 0;
+            border-bottom: 1px solid $border-color;
+            @include mq('md') {
+                display: flex;
+                padding: 20px 0;
+            }
+            .company__title {
+                display: block;
+                padding-bottom: 5px;
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                @include mq('md') {
+                    width: 30%;
+                    padding-bottom: 0;
+                }
+            }
+            .company__text {
+                display: block;
+            }
+            .company__item-text {
+                .company__link {
+                    color: $color;
+                    a {
+                        border-bottom: 1px solid $color;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            a {
+                color: $color;
+                border-bottom: 1px solid $color;
+                opacity: 0.7;
+            }
+
+        }
+    }
+}

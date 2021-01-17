@@ -1,0 +1,120 @@
+@import "common.scss";
+
+.contact__wrapper {
+    .contact__text-top {
+        text-align: center;
+        padding-bottom: 50px;
+        line-height: 30px;
+        @include mq('md') {
+            line-height: 30px;
+        }
+    }
+    .contact__body {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        form {
+        .contact__item {
+            padding-bottom: 30px;
+            @include mq('md') {
+                display: flex;
+                align-items: center;
+            }
+            .contact__title {
+                display: block;
+                padding-bottom: 10px;
+                span {
+                    color: #fff;
+                    background-color: $color;
+                    padding: 5px;
+                    margin-left: 10px;
+                }
+                @include mq('md') {
+                    width: 30%;
+                    padding-bottom: 0;
+                }
+            }
+            input[type="text"] {
+                height: 40px;
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid $border-color;
+                @include mq('md') {
+                    width: 70%;
+                }
+            }
+            .contact__item-radio {
+                @include mq('sm') {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                @include mq('md') {
+                    width: 70%;
+                }
+                .contact__input {
+                    padding-bottom: 10px;
+                    @include mq('sm') {
+                        width: 33%;
+                        padding-bottom: 0;
+                    }
+                }
+                .contact__input-radio{
+                    display: none;
+                  }
+                  .contact__input-radio + label{
+                    padding-left: 30px;
+                    position:relative;
+                  }
+                  .contact__input-radio + label::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $border-color;
+                    border-radius: 50%;
+                  }
+                  .contact__input-radio:checked + label::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 5px;
+                    width: 12px;
+                    height: 12px;
+                    background: $color;
+                    border-radius: 50%;
+                  }
+            }
+            textarea {
+                border: 1px solid $border-color;
+                border-radius: 10px;
+                width: 100%;
+                @include mq('md') {
+                    width: 70%;
+                }
+            }
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid $color;
+            background-color: $color;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px 40px;
+            border-radius: 20px;
+            &:hover {
+                background-color: #fff;
+                color: $color;
+                transition: 0.3s;
+            }
+
+        }
+    }
+    }
+}
+
+                

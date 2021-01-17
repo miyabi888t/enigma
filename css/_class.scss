@@ -1,0 +1,104 @@
+@import "common.scss";
+
+
+.flow__wrapper {
+    .flow__contents {
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+        .flow__items {
+            padding: 20px;
+            align-items: center;
+            border: 1px solid $color;
+            background-color: rgba($color: $color, $alpha: 0.05);
+            @include mq('md') {
+                display: flex;
+            }
+            .flow__item-number {
+                display: none;
+                @include mq('md') {
+                    font-size: 100px;
+                    padding: 0 30px;
+                    display: block;
+                    color: $color;
+                }
+                            }
+            .flow__item-text {
+                .flow__title {
+                    font-size: 20px;
+                    padding-bottom: 5px;
+                    @include mq('md') {
+                        font-size: 24px;
+                    }
+                    span {
+                        display: inline-block;
+                        font-size: 40px;
+                        padding-right: 10px;
+                        color: $color;
+                        @include mq('md') {
+                            display: none;
+                        }
+                    }
+                }
+                .flow__text {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .flow__img {
+            width: 40px;
+            display: block;
+            margin: 20px auto;
+            
+        }
+    }
+}
+
+.course__wrapper {
+    .course__items {
+        padding-bottom: 20px;
+        border-bottom: 2px solid $color;
+        max-width: 900px;
+        display: block;
+        margin: 0 auto 40px auto;
+        .course__title {
+            @include mq('sm') {
+                display: flex;
+                align-items: baseline;
+            }
+            .course__main-title {
+                font-size: 24px;
+                font-weight: normal;
+                padding-bottom: 10px;
+                @include mq('sm') {
+                    padding-right: 30px;
+                    font-size: 36px;
+                }
+            }
+            .course__price {
+                color: $color;
+                font-size: 16px;
+                @include mq('sm') {
+                    font-size: 20px;
+                }
+                span {
+                    color: $color;
+                    font-size: 20px;
+                    @include mq('sm') {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        ul {
+            margin-left: 1em;
+            li {
+                line-height: 30px;
+                &::first-letter {
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+}

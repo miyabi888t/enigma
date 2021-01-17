@@ -1,0 +1,52 @@
+@import "common.scss";
+
+.voice__wrapper {
+    .voice__items {
+        @include mq('md') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .voice__item {
+            background-color: rgba($color: $color, $alpha: 0.2);
+            padding: 30px;
+            margin-bottom: 40px;
+            @include mq('md') {
+                margin-right: 40px;
+                width: calc(50% - 40px * 1 / 2);
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+            .voice__title {
+                text-align: center;
+                padding: 8px;
+                background-color: #fff;
+                margin-bottom: 20px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: -30px;
+                    left: 0;
+                    width: 0px;
+                    height: 0px;
+                    margin: auto;
+                    border-top: 15px solid #Fff;
+                    border-right: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 15px solid transparent;
+                }
+            }
+            .voice__text {
+
+                line-height: 30px;
+
+            }
+            .voice__name {
+                text-align: right;
+            }
+        }
+    }
+  
+}

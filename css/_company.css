@@ -1,0 +1,59 @@
+.company__wrapper .company__contents {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1080px) {
+  .company__wrapper .company__contents {
+    width: 80%;
+    max-width: 900px;
+  }
+}
+
+.company__wrapper .company__contents .company__items {
+  padding: 15px 0;
+  border-bottom: 1px solid #8E8E8E;
+}
+
+@media screen and (min-width: 1080px) {
+  .company__wrapper .company__contents .company__items {
+    display: flex;
+    padding: 20px 0;
+  }
+}
+
+.company__wrapper .company__contents .company__items .company__title {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.company__wrapper .company__contents .company__items .company__title span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1080px) {
+  .company__wrapper .company__contents .company__items .company__title {
+    width: 30%;
+    padding-bottom: 0;
+  }
+}
+
+.company__wrapper .company__contents .company__items .company__text {
+  display: block;
+}
+
+.company__wrapper .company__contents .company__items .company__item-text .company__link {
+  color: #510000;
+}
+
+.company__wrapper .company__contents .company__items .company__item-text .company__link a {
+  border-bottom: 1px solid #510000;
+  opacity: 0.7;
+}
+
+.company__wrapper .company__contents .company__items a {
+  color: #510000;
+  border-bottom: 1px solid #510000;
+  opacity: 0.7;
+}

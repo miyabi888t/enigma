@@ -1,0 +1,52 @@
+@import "common.scss";
+
+.teacher__wrapper {
+    .teacher__items {
+        padding-bottom: 200px;
+        @include mq('md') {
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(3) {
+                flex-direction: row-reverse;
+            }
+        }
+        .teacher__img {
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            @include mq('md') {
+                width: 40%;
+                padding-bottom: 0;
+            }
+        }
+        .teacher__item-text {
+            @include mq('md') {
+                width: 50%;
+            }
+            .teacher__title {
+                font-size: 24px;
+                font-weight: bold;
+
+            }
+            .teacher__text-subject {
+                padding-bottom: 10px;
+                font-size: 20px;
+
+            }
+            .teacher__text-school {
+                padding-bottom: 20px;
+
+            }
+
+            .teacher__text {
+                line-height: 30px;
+
+            }
+        }
+    }
+    .teacher__text-bottom {
+        text-align: center;
+        font-size: 30px;
+    }
+}
