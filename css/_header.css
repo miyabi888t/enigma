@@ -8,36 +8,37 @@ nav.NavMenu {
   width: 100%;
   min-height: 100vh;
   transform: translateX(100%);
+  padding-top: 100px;
 }
 
-nav.NavMenu ul {
+nav.NavMenu .nav__list {
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
-nav.NavMenu ul li {
+nav.NavMenu .nav__list li {
   font-size: 20px;
   list-style-type: none;
   text-align: center;
   transition: 0.3s;
 }
 
-nav.NavMenu ul li:nth-last-child() {
+nav.NavMenu .nav__list li:nth-last-child() {
   padding-bottom: 0;
   border-bottom: none;
 }
 
 @media screen and (min-width: 768px) {
-  nav.NavMenu ul li {
+  nav.NavMenu .nav__list li {
     font-size: 24px;
     font-weight: bold;
   }
 }
 
-nav.NavMenu ul li a {
+nav.NavMenu .nav__list li a {
   display: block;
-  color: #000000;
+  color: #fff;
   padding: 10px 0;
   margin-bottom: 20px;
 }
@@ -67,7 +68,7 @@ nav.NavMenu.active {
   display: block;
   position: absolute;
   width: 30px;
-  border-bottom: solid 3px #000000;
+  border-bottom: solid 3px #8F7800;
   -webkit-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
@@ -156,29 +157,29 @@ header .header__inner .header__items .header__item-pc {
   }
 }
 
-header .header__inner .header__items .header__item-pc .header__list {
+header .header__inner .header__items .header__item-pc ul {
   display: flex;
   align-items: center;
 }
 
-header .header__inner .header__items .header__item-pc .header__list li a {
+header .header__inner .header__items .header__item-pc ul li a {
   color: #fff;
   padding: 10px 15px;
   margin: 0 10px;
 }
 
-header .header__inner .header__items .header__item-pc .header__list li a:hover {
+header .header__inner .header__items .header__item-pc ul li a:hover {
   transition: 0.3s;
   opacity: 0.7;
 }
 
-header .header__inner .header__items .header__item-pc .header__list li .header__item-red {
+header .header__inner .header__items .header__item-pc ul .menu-item-21 a {
   color: #510000;
   background-color: #fff;
   border: 1px solid #Fff;
 }
 
-header .header__inner .header__items .header__item-pc .header__list li .header__item-red:hover {
+header .header__inner .header__items .header__item-pc ul .menu-item-21 a:hover {
   background-color: #510000;
   color: #fff;
   opacity: 1;

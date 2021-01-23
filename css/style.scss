@@ -125,10 +125,10 @@ body {
 
     //fv
     .fv__wrapper {
-        background-image: url(/img/bg-sp.jpg);
+        background-image: url(../img/bg-sp.jpg);
         background-size: cover;
         @include mq('sm') {
-            background-image: url(/img/enigma-top.jpg);
+            background-image: url(../img/enigma-top.jpg);
             background-position: 50% 50%;
             padding: 150px 0;
         }
@@ -180,7 +180,7 @@ body {
     }
 
     .explain__wrapper {
-        background-image: url(/img/explain-bg.jpg);
+        background-image: url(../img/explain-bg.jpg);
         background-size: cover;
         padding: 30px 0;
         @include mq('md') {

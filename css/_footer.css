@@ -19,59 +19,75 @@ footer .footer__top .footer__img {
 }
 
 @media screen and (min-width: 1080px) {
-  footer .footer__top ul {
+  footer .footer__top .footer__list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-footer .footer__top ul li {
+footer .footer__top .footer__list li {
   text-align: center;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1080px) {
-  footer .footer__top ul li {
+  footer .footer__top .footer__list li {
     margin-bottom: 0;
   }
 }
 
-footer .footer__top ul li a {
+footer .footer__top .footer__list li a {
   padding: 10px 15px;
   margin: 0 20px;
   color: #fff;
 }
 
-footer .footer__top ul li a:hover {
+footer .footer__top .footer__list li a:hover {
   transition: 0.3s;
   opacity: 0.7;
 }
 
-footer .footer__top ul li .footer__item-white {
-  background-color: #fff;
-  color: #4D5959;
-  border: 1px solid #fff;
-}
-
-footer .footer__top ul li .footer__item-white:hover {
-  opacity: 1;
-  background-color: #4D5959;
-  color: #fff;
-}
-
-footer .footer__top ul li .footer__item-img {
+footer .footer__top .footer__list li .footer__item-img {
   display: block;
 }
 
-footer .footer__top ul li .footer__item-img img {
+footer .footer__top .footer__list li .footer__item-img img {
   width: 50px;
   display: block;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1080px) {
-  footer .footer__top ul li .footer__item-img img {
+  footer .footer__top .footer__list li .footer__item-img img {
+    margin: auto;
+  }
+}
+
+footer .footer__top .footer__list .menu-item-30 a {
+  background-color: #fff;
+  color: #4D5959;
+  border: 1px solid #fff;
+}
+
+footer .footer__top .footer__list .menu-item-30 a:hover {
+  opacity: 1;
+  background-color: #4D5959;
+  color: #fff;
+}
+
+footer .footer__top .footer__list .menu-item-28 a {
+  display: block;
+}
+
+footer .footer__top .footer__list .menu-item-28 a img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1080px) {
+  footer .footer__top .footer__list .menu-item-28 a img {
     margin: auto;
   }
 }

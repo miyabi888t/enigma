@@ -5,18 +5,18 @@
 
      //トップへ戻る
      
-     $(function(){
-        var pagetop = $('.pagetop');
+     jQuery(function(){
+        var pagetop = jQuery('.pagetop');
         pagetop.hide();
-        $(window).scroll(function () {
-           if ($(this).scrollTop() > 100) {
+        jQuery(window).scroll(function () {
+           if (jQuery(this).scrollTop() > 100) {
                 pagetop.fadeIn();
            } else {
                 pagetop.fadeOut();
            }
         });
         pagetop.click(function () {
-           $('body, html').animate({ scrollTop: 0 }, 500);
+           jQuery('body, html').animate({ scrollTop: 0 }, 500);
            return false;
         });
       });
@@ -24,40 +24,24 @@
 
 
 
-      //fadein
-
-      $(function(){
-        $(window).scroll(function (){
-          $('.fadein').each(function(){
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight + 200){
-              $(this).addClass('scrollin');
-            }
-          });
-        });
-      });
-
-
 
       //ハンバーガーメニュー
 
-      $(function() {
-        $('.Toggle').click(function() {
-        $(this).toggleClass('active');
+      jQuery(function() {
+        jQuery('.Toggle').click(function() {
+        jQuery(this).toggleClass('active');
         
-        if ($(this).hasClass('active')) {
-        $('.NavMenu').addClass('active'); 
+        if (jQuery(this).hasClass('active')) {
+        jQuery('.NavMenu').addClass('active'); 
         } else {
-        $('.NavMenu').removeClass('active'); 
+        jQuery('.NavMenu').removeClass('active'); 
         }
         });
         });
 
-        $(function() {
-          $('.Toggle').click(function() {
-            $('.overlay').toggleClass('all-over');
+        jQuery(function() {
+          jQuery('.Toggle').click(function() {
+            jQuery('.overlay').toggleClass('all-over');
           });
         });
 
@@ -92,7 +76,7 @@
 
         const setFillHeight = () => {
           const vh = window.innerHeight * 0.01;
-          document.documentElement.style.setProperty('--vh', `${vh}px`);
+          document.documentElement.style.setProperty('--vh', `jQuery{vh}px`);
         }
         
         // 画面のサイズ変動があった時に高さを再計算する
@@ -105,9 +89,9 @@ setFillHeight();
 
 
 jQuery(function () {
-  $('.js-accordion__title').on('click', function () {
-    $(this).next().slideToggle(200);
-    $(this).toggleClass('open', 200);
+  jQuery('.js-accordion__title').on('click', function () {
+    jQuery(this).next().slideToggle(200);
+    jQuery(this).toggleClass('open', 200);
   });
 
 });
