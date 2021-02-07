@@ -13,10 +13,10 @@
                 <div class="flow__items">
                     <p class="flow__item-number">1</p>
                     <div class="flow__item-text">
-                        <h3 class="flow__title"><span>1</span>受講前のご説明、面談</h3>
-                        <p class="flow__text">実際にご受講される前に、ZOOMで授業に対する要望をお聞きしていきます。
-                            その中で、現在の立ち位置、今後の勉強の方向性を授業の目的を明確化します。
-                            年単位の受講」ではなく、４回、８回など、「回数を区切った受講」で目的意識を持ってご受講されることをおすすめしています。面談後に体験授業にも参加頂けますので可能な限り保護者様と生徒様お揃いで参加して頂くことを推奨しています。
+                        <h3 class="flow__title"><span>1</span><p>受講前のご説明、面談</p></h3>
+                        <p class="flow__text">実際にご受講される前に、ZOOMで授業に対する要望をお聞きしていきます。<br class="sp-only">
+                            その中で、現在の立ち位置、今後の勉強の方向性を授業の目的を明確化します。<br class="sp-only">
+                            年単位の受講」ではなく、４回、８回など、「回数を区切った受講」で目的意識を持ってご受講されることをおすすめしています。<br class="sp-only">面談後に体験授業にも参加頂けますので可能な限り保護者様と生徒様お揃いで参加して頂くことを推奨しています。
                         </p>
                     </div>
                 </div>
@@ -26,8 +26,8 @@
                 <div class="flow__items">
                     <p class="flow__item-number">2</p>
                     <div class="flow__item-text">
-                        <h3 class="flow__title"><span>2</span>体験授業</h3>
-                        <p class="flow__text">基本的には、面談での設計に基づいて体験授業を行っていきます。
+                        <h3 class="flow__title"><span>2</span><p>体験授業</p></h3>
+                        <p class="flow__text">基本的には、面談での設計に基づいて体験授業を行っていきます。<br class="sp-only">
                             やむを得ず保護者の方のみでのご説明になる場合は、別日程で生徒様に体験授業をさせていただきますので遠慮なくお申し出ください。</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 <div class="flow__items">
                     <p class="flow__item-number">3</p>
                     <div class="flow__item-text">
-                        <h3 class="flow__title"><span>3</span>受講開始</h3>
+                        <h3 class="flow__title"><span>3</span><p>受講開始</p></h3>
                         <p class="flow__text">体験終了後、開始日時を相談して受講開始となります。授業は、初回にご契約頂いた回数のみで自動継続はありません。</p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="course__items">
                 <div class="course__title">
                     <h3 class="course__main-title">通常授業</h3>
-                    <p class="course__price"><span>60</span>×分<span>4</span>回：<span>36,000</span>円(税込)</p>
+                    <p class="course__price"><span>60</span>分×<span>4</span>回：<span class="course__big">36,000</span>円(税込)</p>
                 </div>
                 <ul>
                     <li>・基本のコースです。</li>
@@ -62,7 +62,7 @@
             <div class="course__items">
                 <div class="course__title">
                     <h3 class="course__main-title">グループ授業</h3>
-                    <p class="course__price"><span>60</span>×分<span>4</span>回：<span>20,000</span>円(税込)</p>
+                    <p class="course__price"><span>60</span>分×<span>4</span>回：<span class="course__big">20,000</span>円(税込)</p>
                 </div>
                 <ul>
                     <li>・生徒２～３名の授業です。</li>
@@ -72,7 +72,7 @@
             <div class="course__items">
                 <div class="course__title">
                     <h3 class="course__main-title">特別対策授業</h3>
-                    <p class="course__price"><span>60</span>×分<span>4</span>回：<span>50,000</span>円(税込)</p>
+                    <p class="course__price"><span>60</span>分×<span>4</span>回：<span class="course__big">50,000</span>円(税込)</p>
                 </div>
                 <ul>
                     <li>・専門性の高いご要望にお応えする授業です。</li>
